@@ -1,0 +1,14 @@
+{
+  "keywords": [
+    "LIST",
+    "OF",
+    "KEY",
+    "WORDS"
+  ],
+  "email": {
+    "server": "SERVER",
+    "port": "PORT",
+    "username": "USERNAME",
+    "password": "PASSWORD"
+  }
+}
