@@ -26,13 +26,14 @@ __license__ = "GPL"
 
 import unittest
 
-
-class Dummy(unittest.TestCase):
-
-    def test_dummy(self):
-        self.assertEqual(42, 7*6)
+from adcrawler.helper import zip_to_city
 
 
-if __name__ == "__main__":
+class Helper(unittest.TestCase):
+    def test_zip_to_city(self):
+        self.assertEqual("Gossau SG", zip_to_city("9200"))
+
+
+if __name__ == "__main__":  # pragma: no cover
     # run all tests
     unittest.main()
