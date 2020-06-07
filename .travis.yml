@@ -8,7 +8,6 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - python3 testing/testing.py
-  - coverage run testing/testing.py
+  - coverage run -m unittest discover -s testing
 after_success:
   - coveralls

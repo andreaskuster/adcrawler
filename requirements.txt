@@ -1,2 +1,7 @@
 coverage
 coveralls
+requests
+beautifulsoup4
+python-telegram-bot
+pyyaml
+imapclient
