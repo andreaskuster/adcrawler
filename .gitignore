@@ -1,0 +1,3 @@
+# ignore configuration files containing sensistive information
+adcrawler/bots/config/*
+
