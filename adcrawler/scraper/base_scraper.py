@@ -13,41 +13,41 @@ from bs4 import BeautifulSoup
 
 
 class Region(Enum):
-    ALL = "all",
-    AG = "ag",  # Aargau
-    AI = "ai",  # Appenzell Ausserrhoden
-    AR = "ar",  # Appenzell Innerrhoden
-    BS = "bs",  # Basel-Landschaft
-    BL = "bl",  # Basel-Stadt
-    BE = "be",  # Bern
-    FR = "fr",  # Fribourg
-    GE = "ge",  # Geneva
-    GL = "gl",  # Glarus
-    GR = "gr",  # Grisons
-    JU = "ju",  # Jura
-    LU = "lu",  # Lucerne
-    NE = "ne",  # Neuchatel
-    NW = "nw",  # Nidwalden
-    OW = "ow",  # Obwalden
-    SH = "sh",  # Schaffhausen
-    SZ = "sz",  # Schwyz
-    SO = "so",  # Solothurn
-    SG = "sg",  # St. Gallen
-    TG = "tg",  # Thurgau
-    TI = "ti",  # Ticino
-    UR = "ur",  # Uri
-    VD = "vd",  # Valais
-    VS = "vs",  # Vaud
-    ZG = "zg",  # Zug
-    ZH = "zh",  # Zürich
-    LI = "li",  # Lichtenstein (technically not a canton/part of Switzerland)
+    ALL = "all"
+    AG = "ag"  # Aargau
+    AI = "ai"  # Appenzell Ausserrhoden
+    AR = "ar"  # Appenzell Innerrhoden
+    BS = "bs"  # Basel-Landschaft
+    BL = "bl"  # Basel-Stadt
+    BE = "be"  # Bern
+    FR = "fr"  # Fribourg
+    GE = "ge"  # Geneva
+    GL = "gl"  # Glarus
+    GR = "gr"  # Grisons
+    JU = "ju"  # Jura
+    LU = "lu"  # Lucerne
+    NE = "ne"  # Neuchatel
+    NW = "nw"  # Nidwalden
+    OW = "ow"  # Obwalden
+    SH = "sh"  # Schaffhausen
+    SZ = "sz"  # Schwyz
+    SO = "so"  # Solothurn
+    SG = "sg"  # St. Gallen
+    TG = "tg"  # Thurgau
+    TI = "ti"  # Ticino
+    UR = "ur"  # Uri
+    VD = "vd"  # Valais
+    VS = "vs"  # Vaud
+    ZG = "zg"  # Zug
+    ZH = "zh"  # Zürich
+    LI = "li"  # Lichtenstein (technically not a canton/part of Switzerland)
 
 
 class Sorting(Enum):
-    PRICE_ASCENDING = "price_ascending",
-    PRICE_DESCENDING = "price_descending",
-    OLDEST_FIRST = "oldest_first",
-    NEWEST_FIRST = "newest_first",
+    PRICE_ASCENDING = "price_ascending"
+    PRICE_DESCENDING = "price_descending"
+    OLDEST_FIRST = "oldest_first"
+    NEWEST_FIRST = "newest_first"
     RELEVANCE = "relevance"
 
 

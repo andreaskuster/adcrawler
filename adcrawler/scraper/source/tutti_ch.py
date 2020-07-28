@@ -55,7 +55,7 @@ class Tutti(BaseScraper):
 if __name__ == "__main__":
 
     tutti = Tutti()
-    tutti.scrape(region=Region.SG, sorting=Sorting.PRICE_ASCENDING)
+    tutti.scrape(region=Region.SG.value, sorting=Sorting.PRICE_ASCENDING.value)
 
     for item in tutti.data:
         print(item)
