@@ -1,0 +1,67 @@
+name: tutti_ch
+data_path:
+  base: items
+  title: subject
+  description: body
+  price: price
+  language: language
+  location_zip: location_info/plz
+  identifier: id
+  url:
+format: json
+request:
+  url: https://api.tutti.ch/v10/list.json
+  method: GET
+  parameters:
+    aggregated: 1
+    limit: 100  # maximum number of results
+    o: 1
+    sp:
+      price_ascending: 1
+      price_descending: 2
+      oldest_first: 0
+      newest_first:  # None = do not include parameter
+      relevance: 3
+      default: 1
+    st:
+      all:
+      offer: s
+      search: k
+      default: s
+    ps:   # minimum price, optional
+    pe:   # maximum price, optional
+    region:
+      all: 1  # don't care
+      ag: 1  # Aargau
+      ai: 2  # Appenzell Ausserrhoden
+      ar: 2  # Appenzell Innerrhoden
+      bs: 3  # Basel-Landschaft
+      bl: 3  # Basel-Stadt
+      be: 4  # Bern
+      fr: 5  # Fribourg
+      ge: 6  # Geneva
+      gl: 7  # Glarus
+      gr: 8  # Grisons
+      ju: 9  # Jura
+      lu: 10  # Lucerne
+      ne: 11  # Neuchatel
+      nw: 12  # Nidwalden
+      ow: 12  # Obwalden
+      sh: 13  # Schaffhausen
+      sz: 14  # Schwyz
+      so: 15  # Solothurn
+      sg: 16  # St. Gallen
+      tg: 17  # Thurgau
+      ti: 18  # Ticino
+      ur: 19  # Uri
+      vd: 20  # Valais
+      vs: 21  # Vaud
+      zg: 22  # Zug
+      zh: 23  # Zürich
+      li: 24  # Lichtenstein (technically not a canton/part of Switzerland)
+    with_all_regions:
+      all: True
+      single: False
+  header:
+    "X-Tutti-Hash": "a275c2cc-8f54-4444-87a1-8b743dc868d4"
+    "X-Tutti-Source": "web LIVE-190611-29"
