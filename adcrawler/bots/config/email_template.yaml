@@ -1,0 +1,12 @@
+username: john.doe@example.com
+password: strong_password_123  # if no password is set, prompt will ask for it at start up
+poll_interval: 10.0 # [seconds]
+inbox_folder: inbox
+imap:
+  server: imap.example.com
+  port: 993
+  encryption: tls
+smtp:
+  server: smtp.example.com
+  port: 587
+  encryption: starttls
