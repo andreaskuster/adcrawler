@@ -51,7 +51,7 @@ class TelegramBot(BaseBot, ABC):
         # ask for password if it has not been set
         if os.environ.get("TELEGRAM_API_KEY") is not None:
             self.config["api_key"] = os.environ["TELEGRAM_API_KEY"]
-            printf("use telegram api key from the environment var")
+            print("use telegram api key from the environment var")
         if self.config["api_key"] is None:
             self.config["api_key"] = getpass.getpass("Telegram bot api key: ")
 
