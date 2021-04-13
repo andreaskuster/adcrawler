@@ -3,7 +3,7 @@
 
 """
     Tutty Crawler
-    Copyright (C) 2020  Andreas Kuster
+    Copyright (C) 2020-2021  Andreas Kuster
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,9 +19,9 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-__description__ = "Continuous integration unit testing."
+__description__ = "Continuous integration unit testing"
 __author__ = "Andreas Kuster"
-__copyright__ = "Copyright 2020, Tutti Crawler"
+__copyright__ = "Copyright 2020-2021, AdCrawler"
 __license__ = "GPL"
 
 
@@ -30,7 +30,7 @@ import os
 import threading
 
 from adcrawler.helper import zip_to_city
-from adcrawler.bots import EmailBot, TelegramBot
+# from adcrawler.bots import EmailBot, TelegramBot # can only be tested offline, since we do not want to reveal actual login data / api keys
 from adcrawler import AdCrawler
 
 
