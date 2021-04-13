@@ -49,6 +49,8 @@ class TelegramBot(BaseBot, ABC):
         with open(os.path.join(os.path.dirname(__file__), self.config_path)) as f:
             self.config = yaml.load(f, Loader=yaml.FullLoader)
         # ask for password if it has not been set
+        if os.environ.get("TELEGRAM_API_KEY") is not None:
+            self.config["api_key"] = os.environ["TELEGRAM_API_KEY"]
         if self.config["api_key"] is None:
             self.config["api_key"] = getpass.getpass("Telegram bot api key: ")
 

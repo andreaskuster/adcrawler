@@ -49,6 +49,8 @@ class EmailBot(BaseBot):
         with open(os.path.join(os.path.dirname(__file__), self.config_path)) as f:
             self.config = yaml.load(f, Loader=yaml.FullLoader)
         # ask for password if it has not been set
+        if os.environ.get("TELEGRAM_API_KEY") is not None:
+            self.config["api_key"] = os.environ["ADCRAWLERBOT_MAIL_CH_API_KEY"]
         if self.config["password"] is None:
             self.config["password"] = getpass.getpass("Email server password: ")
 
@@ -136,7 +138,7 @@ class EmailBot(BaseBot):
         msg = email.message.EmailMessage()
         msg['from'] = self.config["username"]
         msg["to"] = user
-        msg["Subject"] = header
+        msg["Subject"] = header.replace("\n", " ")
         msg.set_content(message)
         # send message
         self.init_smtp()

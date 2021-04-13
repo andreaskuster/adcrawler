@@ -30,7 +30,7 @@ import os
 import threading
 
 from adcrawler.helper import zip_to_city
-# from adcrawler.bots import EmailBot, TelegramBot # can only be tested offline, since we do not want to reveal actual login data / api keys
+from adcrawler.bots import EmailBot, TelegramBot
 from adcrawler import AdCrawler
 
 

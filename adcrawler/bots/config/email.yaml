@@ -1,0 +1,12 @@
+username: adcrawler@mail.ch
+password:  # if no password is set, prompt will ask for it at start up
+poll_interval: 10.0
+inbox_folder: inbox
+imap:
+  server: imap.mail.ch
+  port: 993
+  encryption: tls
+smtp:
+  server: smtp.mail.ch
+  port: 587
+  encryption: starttls  # alternatives: (port: 465, tls), (port: 25, starttls)
