@@ -63,7 +63,7 @@ class Scraper:
             self.thread.join()
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":   # pragma: no cover
     # instantiate scraper
     scraper = Scraper()
     # run polling server

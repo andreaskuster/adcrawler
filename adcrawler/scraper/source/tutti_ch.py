@@ -52,7 +52,7 @@ class Tutti(BaseScraper):
         return removed.replace(" ", "-").replace("ä", "ae").replace("ö", "oe").replace("ü", "ue")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":   # pragma: no cover
 
     tutti = Tutti()
     tutti.scrape(region=Region.SG.value, sorting=Sorting.PRICE_ASCENDING.value)
