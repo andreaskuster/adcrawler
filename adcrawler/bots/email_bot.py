@@ -50,7 +50,8 @@ class EmailBot(BaseBot):
             self.config = yaml.load(f, Loader=yaml.FullLoader)
         # ask for password if it has not been set
         if os.environ.get("ADCRAWLERBOT_MAIL_CH_API_KEY") is not None:
-            self.config["api_key"] = os.environ["ADCRAWLERBOT_MAIL_CH_API_KEY"]
+            self.config["password"] = os.environ["ADCRAWLERBOT_MAIL_CH_API_KEY"]
+            print("use email password from the environment var")
         if self.config["password"] is None:
             self.config["password"] = getpass.getpass("Email server password: ")
 
